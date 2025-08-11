@@ -73,6 +73,10 @@ public class PlayerServiceImpl implements IPlayerService {
 	}
 	
 	
+	@Override
+	public List<Player> findByJerseyNumber(int jerseyNumber) {
+		return repo.findByJerseyNumber(jerseyNumber);
+	}
 
 
 }

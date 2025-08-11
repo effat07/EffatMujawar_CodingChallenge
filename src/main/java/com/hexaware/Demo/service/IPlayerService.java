@@ -12,5 +12,6 @@ public interface IPlayerService {
       public Player addPlayer(PlayerDTO dto);
       public String deletePlayer(Long playerId);
       public Player updatePlayer(Long playerId, PlayerDTO dto);
+      public List<Player> findByJerseyNumber(int jerseyNumber);
 
 }

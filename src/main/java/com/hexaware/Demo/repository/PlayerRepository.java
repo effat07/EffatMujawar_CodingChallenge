@@ -9,5 +9,6 @@ import com.hexaware.Demo.entity.Player;
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Long> {
 	
-         
+	public List<Player> findByJerseyNumber(int jerseyNumber);
+
 }
