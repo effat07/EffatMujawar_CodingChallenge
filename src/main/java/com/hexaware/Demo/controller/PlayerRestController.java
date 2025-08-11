@@ -50,8 +50,5 @@ public class PlayerRestController {
 	   return service.updatePlayer(playerId, dto);
    }
    
-   @GetMapping("/getByJerseyNumber/{jerseyNumber}")
-   public List<Player> getByJerseyNumber(@PathVariable int jerseyNumber){
-	   return service.findByJerseyNumber(jerseyNumber);
-   }
+   
 }
